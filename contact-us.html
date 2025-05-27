@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>contact Teklemariam</title>
+</head>
+<body>
+  <header>
+    <div class="logo"><a href="index.html">Teklemariam Portfolio</a></div>
+
+    <ul class="nav-link" id="nav">
+        <div class="close">
+          <div class="close-left"></div>
+          <div class="close-right" ></div>
+        </div>
+        <li> <a href="index.html">Home</a></li>
+        <li> <a href="aboutUs.html">About Me</a></li>
+        <li><a href="contact-us.html">contact Me</a></li>
+      </ul>
+    <div class="menu" id="menu">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </header>
+
+  
+   
+    <form onsubmit="return fakeSuccess()">
+      <h1>Contact <span>Me!</span></h1>
+    <label for="fullname">Full Name:</label>
+    <input type="text" id="fullname" placeholder="fullname" required>
+
+    <label for="email">E-mail:</label>
+    <input type="email" id="email" placeholder="email" required pattern="^[a-zA-Z0-9._%+-]+@gmail\.com$">
+
+    <label for="message">Message:</label>
+    <textarea id="message" placeholder="Enter your message here" rows="10" cols="10" required></textarea>
+
+    <button type="submit">Send message</button>
+    <div class="success" id="success-message"></div>
+    <div class="error" id="error-message"></div>
+
+  </form>
+  <footer>&copy; 2025 Tekymary | All Right Reserved</footer>
+  <script src="main.js"></script>
+</body>
+</html>
